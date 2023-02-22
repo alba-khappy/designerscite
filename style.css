@@ -86,7 +86,7 @@ p {
 }
 
 .header__container {
-    padding: 2rem 0;
+    padding: 2rem;
 }
 
 .header__logo {
@@ -158,7 +158,7 @@ p {
 
 .about__container {
     text-align: center;
-    padding: 4rem 0;
+    padding: 4rem 2rem;
 }
 
 .about__video {
@@ -187,6 +187,8 @@ p {
 .works__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    max-width: fit-content;
+    margin: 0 auto;
 }
 
 .works__h2 {
@@ -200,9 +202,19 @@ p {
     background: #171719 url(./images/stages-img.jpg) right / 25% no-repeat;
 }
 
+.stages__container {
+    padding: 0 2rem;
+}
+
+.stages__h2 {
+    color: #A0E8FF;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
 .stages__item {
     display: grid;
-    grid-template-columns: 7rem minmax(5rem, 35rem);
+    grid-template-columns: 8rem minmax(5rem, 35rem);
     grid-template-rows: repeat(2, auto);
     row-gap: 1rem;
     margin-bottom: 2rem;
@@ -234,6 +246,122 @@ p {
 
 /*prices__section*/
 
+.prices__section {
+    background-color: #EDEDED;
+    padding: 4rem 0;
+    color: #171719;
+    text-align: center;
+}
+
+.prices__container {
+    padding: 0 2rem;
+}
+
+.prices__h2 {
+    margin-bottom: 4rem;
+}
+
+.prices__offers-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.prices__offers-item {
+    width: 30%;
+    text-align: center;
+    box-shadow: 0px 0px 26px rgba(126, 147, 158, 0.33);
+}
+
+.prices__offers-heading {
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+}
+
+.prices__offers-heading--1 {
+    background-color: #dce7ea;
+}
+
+.prices__offers-heading--2 {
+    background-color: #bfdde8;
+}
+
+.prices__offers-heading--3 {
+    background-color: #9ed0e0;
+}
+
+
+.prices__offers-heading p:first-child {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: .5rem;
+}
+
+.prices__offers-heading p:last-child {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.prices__offers-cost {
+    font-size: .9rem;
+    font-weight: 300;
+    margin: 0 2rem 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #b8d1d8;
+}
+
+.prices__offers-cost span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.prices__offers-request {
+    max-width: 20rem;
+    font-weight: 500;
+    font-size: .9rem;
+    margin: 0 2rem 2rem;
+    padding-bottom: 2rem; 
+    border-bottom: 1px solid #b8d1d8;
+}
+
+.prices__offers-conditions-list {
+    position: relative;
+    margin: 0 2rem 2rem;
+    padding-bottom: 2rem; 
+    border-bottom: 1px solid #b8d1d8;
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+.prices__offers-conditions-item {
+    width: fit-content;
+    position: relative;
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.prices__offers-conditions-item:not(:last-child) {
+    margin-bottom: .5rem;
+}
+
+.prices__offers-conditions-item::after {
+    content: '';
+    position: absolute;
+    left: 0.5rem;
+    top: 0.2rem;
+    width: 1rem;
+    height: 1rem;
+    background: url(./images/check-img.svg) center / contain no-repeat;
+}
+
+.prices__offers-details {
+    font-weight: 300;
+    font-size: .9rem;
+    color: rgba(23, 23, 25, 0.7);
+    margin: 0 2rem 2.5rem;
+}
+
 /*calculate-now__section*/
 
 .calculate-now__section {
@@ -245,5 +373,108 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+}
+
+.calculate-now__content {
+    position: relative;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding-right: 8rem;
+}
+
+.calculate-now__content::after {
+    content: '';
+    position: absolute;
+    top: .2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 1rem;
+    background: url(./images/arrow.svg) center / contain no-repeat;
+}
+
+.calculate-now__content span {
+    font-weight: 700;
+}
+
+/*faq__section*/
+
+.faq__section {
+    background: url(./images/faq-img.jpg) center / cover no-repeat;
+    text-align: center;
+}
+
+/* .faq__container {
+    padding: 4rem 0;
+} */
+
+.faq__h2 {
+    color: #A0E8FF;
+    margin-bottom: 3rem;
+}
+
+.faq__questions-list {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.faq__questions-item {
+    width: 100%;
+    position: relative;
+    background: rgba(217, 217, 217, 0.1);
+    padding: 1.5rem 1.3rem;
+    text-align: left;
+    font-weight: 500;
+    font-size: .9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.faq__questions-item:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.faq__questions-item::after {
+    content: '+';
+    position: absolute;
+    right: .5rem;
+    top: 1.3rem;
+    font-weight: 500;
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+/*contacts*/
+
+.contacts__section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.contacts__h2 {
+    color: #A0E8FF;
+    margin-bottom: 3rem;
+}
+
+.contacts__button--order {
+    margin-bottom: 3rem;
+}
+
+.contacts__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contacts__content {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.contacts__link {
+    font-weight: 300;
+    font-size: .9rem;
 }

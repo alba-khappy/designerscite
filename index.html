@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Old+Standard+TT:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" type="text/css" media="all">
     <title>Document</title>
 </head>
@@ -67,8 +70,8 @@
             </div>
         </section>
         <section class="stages__section">
-            <div class="container">
-                <h2 class="h2-style">Этапы работы</h2>
+            <div class="container stages__container">
+                <h2 class="h2-style stages__h2">Этапы работы</h2>
                 <ul class="stages__list">
                     <li class="stages__item">
                         <div class="stages__number">01</div>
@@ -99,37 +102,95 @@
             </div>
         </section>
         <section class="prices__section">
-            <div class="container">
-                <h2 class="h2-style">Услуги и цены</h2>
-                <ul class="">
-                    <li class=""></li>
+            <div class="container prices__container">
+                <h2 class="h2-style prices__h2">Услуги и цены</h2>
+                <ul class="prices__offers-list">
+                    <li class="prices__offers-item">
+                        <div class="prices__offers-heading prices__offers-heading--1">
+                            <p class="">Пакет</p>
+                            <p class="">“Дизайн-проект”</p>
+                        </div>
+                        <p class="prices__offers-cost">от <span>60$</span> за кв.м</p>
+                        <p class="prices__offers-request">Идеальный вариант для удаленной работы (от 100 кв.м., 3 правки)</p>
+                        <ul class="prices__offers-conditions-list">
+                            <li class="prices__offers-conditions-item">Планировочное решение</li>
+                            <li class="prices__offers-conditions-item">Дизайн-концепция</li>
+                            <li class="prices__offers-conditions-item">3Д Визуализация</li>
+                            <li class="prices__offers-conditions-item">Подбор материалов</li>
+                            <li class="prices__offers-conditions-item">Строительные чертежи</li>
+                        </ul>
+                        <p class="prices__offers-details">* до 100 кв.м. стоимость уточняется у менеджера</p>
+                    </li>
+                    <li class="prices__offers-item">
+                        <div class="prices__offers-heading prices__offers-heading--2">
+                            <p class="">Пакет</p>
+                            <p class="">“Дизайн-проект”</p>
+                        </div>
+                        <p class="prices__offers-cost">от <span>60$</span> за кв.м</p>
+                        <p class="prices__offers-request">Идеальный вариант для удаленной работы (от 100 кв.м., 3 правки)</p>
+                        <ul class="prices__offers-conditions-list">
+                            <li class="prices__offers-conditions-item">Планировочное решение</li>
+                            <li class="prices__offers-conditions-item">Дизайн-концепция</li>
+                            <li class="prices__offers-conditions-item">3Д Визуализация</li>
+                            <li class="prices__offers-conditions-item">Подбор материалов</li>
+                            <li class="prices__offers-conditions-item">Строительные чертежи</li>
+                        </ul>
+                        <p class="prices__offers-details">* до 100 кв.м. стоимость уточняется у менеджера</p>
+                    </li>
+                    <li class="prices__offers-item">
+                        <div class="prices__offers-heading prices__offers-heading--3">
+                            <p class="">Пакет</p>
+                            <p class="">“Дизайн-проект”</p>
+                        </div>
+                        <p class="prices__offers-cost">от <span>60$</span> за кв.м</p>
+                        <p class="prices__offers-request">Идеальный вариант для удаленной работы (от 100 кв.м., 3 правки)</p>
+                        <ul class="prices__offers-conditions-list">
+                            <li class="prices__offers-conditions-item">Планировочное решение</li>
+                            <li class="prices__offers-conditions-item">Дизайн-концепция</li>
+                            <li class="prices__offers-conditions-item">3Д Визуализация</li>
+                            <li class="prices__offers-conditions-item">Подбор материалов</li>
+                            <li class="prices__offers-conditions-item">Строительные чертежи</li>
+                        </ul>
+                        <p class="prices__offers-details">* до 100 кв.м. стоимость уточняется у менеджера</p>
+                    </li>
                 </ul>
             </div>
         </section>
         <section class="calculate-now__section">
             <div class="container calculate-now__container">
-                <p class="">Узнать <span>стоимость проекта</span> прямо сейчас</p>
+                <p class="calculate-now__content">Узнать <span>стоимость проекта</span> прямо сейчас</p>
                 <a href="" class="button-style">расcчитать</a>
             </div>
 
         </section>
         <section class="faq__section">
-            <div class="container">
-                <h2 class="h2-style">Часто задаваемые вопросы</h2>
-                <ul class="">
-                    <li class=""><a href="" class=""></a></li>
+            <div class="container faq__container">
+                <h2 class="h2-style faq__h2">Часто задаваемые вопросы</h2>
+                <ul class="faq__questions-list">
+                    <li class="faq__questions-item">Перед началом проекта, вы выезжаете на объект?</li>
+                    <li class="faq__questions-item">Что входит в дизайн-проект?</li>
+                    <li class="faq__questions-item">Каков в среднем бюджет на реализацию ваших проектов?</li>
+                    <li class="faq__questions-item">Берете ли вы проекты с маленькой площадью помещения?</li>
                 </ul>
             </div>
         </section>
 
-        <section class="faq__section">
+        <section class="contacts__section">
             <div class="container">
-                <h2 class="h2-style"></h2>
-                <a href="" class="button-style">Заказать проект</a>
-                <ul class="">
-                    <li class="">
-                        <p class=""></p>
-                        <a href="" class=""></a>
+                <h2 class="h2-style contacts__h2">Контакты</h2>
+                <a href="" class="button-style contacts__button--order">Заказать проект</a>
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <p class="contacts__content">По вопросам сотрудничества</p>
+                        <a href="" class="contacts__link">infoanastpich@mail.ru</a>
+                    </li>
+                    <li class="contacts__item">
+                        <p class="contacts__content">Telegram | Whatsapp</p>
+                        <a href="" class="contacts__link">+7 977 666 99 77</a>
+                    </li>
+                    <li class="contacts__item">
+                        <p class="contacts__content">Адрес</p>
+                        <a href="" class="contacts__link">г.Москва, ул. Красноказарменная, 136</a>
                     </li>
                 </ul>
             </div>
