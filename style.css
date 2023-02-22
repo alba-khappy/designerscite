@@ -76,6 +76,10 @@ p {
     margin: 0 0 2rem 0;
 }
 
+.h2-style--blue {
+    color: #A0E8FF;
+}
+
 
 /*header*/
 
@@ -191,10 +195,6 @@ p {
     margin: 0 auto;
 }
 
-.works__h2 {
-    color: #A0E8FF
-}
-
 /*stages__section*/
 
 .stages__section {
@@ -207,7 +207,6 @@ p {
 }
 
 .stages__h2 {
-    color: #A0E8FF;
     text-align: center;
     margin-bottom: 3rem;
 }
@@ -399,16 +398,15 @@ p {
 /*faq__section*/
 
 .faq__section {
-    background: url(./images/faq-img.jpg) center / cover no-repeat;
+    background: url(./images/faq-img.png) center / cover no-repeat;
     text-align: center;
 }
 
-/* .faq__container {
+.faq__container {
     padding: 4rem 0;
-} */
+}
 
 .faq__h2 {
-    color: #A0E8FF;
     margin-bottom: 3rem;
 }
 
@@ -449,12 +447,14 @@ p {
 /*contacts*/
 
 .contacts__section {
-    padding: 4rem 0;
     text-align: center;
 }
 
+.contacts__container {
+    padding: 4rem 2rem;
+}
+
 .contacts__h2 {
-    color: #A0E8FF;
     margin-bottom: 3rem;
 }
 
@@ -477,4 +477,12 @@ p {
 .contacts__link {
     font-weight: 300;
     font-size: .9rem;
+}
+
+
+@media (max-width: 800px) {
+    .header__nav-list {
+        display: none;
+        flex-direction: column;
+    }
 }
