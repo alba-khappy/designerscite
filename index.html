@@ -15,6 +15,9 @@
         <div class="container header__container">
             <a href="" class="header__logo">Анастасия Пичурская</a>
             <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <button class="header__nav-button-close"></button>
+                </li>
                 <li class="header__nav-item"><a href="" class="header__nav-link">Кто я</a></li>
                 <li class="header__nav-item"><a href="" class="header__nav-link">Мои работы</a></li>
                 <li class="header__nav-item"><a href="" class="header__nav-link">Этапы работ</a></a></li>
@@ -62,10 +65,10 @@
     <main>
         <section class="main-screen__section">
             <div class="container main-screen__container">
-                <h1 class="main-screen__heading">Дизайнер интерьеров </br> Анастасия Пичурская</h1>
-                <p class="main-screen__content--about">Современные интерьеры для комфортной жизни</p>
-                <p class="main-screen__content--example">Отправьте запрос на просчет стоимости и получите пример нашего проекта</p>
-                <a href="" class="button-style main-screen__button-calculation">бесплатный расчет проекта</a>
+                <h1 class="main-screen__heading">Дизайнер интерьеров <br> Анастасия Пичурская</h1>
+                <p class="main-screen__content--about">Современные интерьеры <br> <span class="main-screen__content--accent">для комфортной</span> жизни</p>
+                <p class="main-screen__content--example">Отправьте запрос <br> и вы получите бесплатный расчет стоимости <br>именно для вашего проекта</p>
+                <a href="" class="button-style main-screen__button-calculation">Получить бесплатный расчет</a>
             </div>
         </section>
         <section class="about__section">
@@ -199,16 +202,28 @@
                 <h2 class="h2-style faq__h2 h2-style--blue">Часто задаваемые вопросы</h2>
                 <ul class="faq__questions-list">
                     <li class="faq__questions-item">
-                        <a href="" class="faq__questions-link">Перед началом проекта, вы выезжаете на объект?</a>
+                        <button class="faq__questions-button">Перед началом проекта, вы выезжаете на объект?</button>
+                        <div class="faq__questions-panel">
+                            <p class="faq__questions-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
                     </li>
                     <li class="faq__questions-item">
-                        <a href="" class="faq__questions-link">Что входит в дизайн-проект?</a>
+                        <button class="faq__questions-button">Каков в среднем бюджет на реализацию ваших проектов?</button>
+                        <div class="faq__questions-panel">
+                            <p class="faq__questions-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
                     </li>
                     <li class="faq__questions-item">
-                        <a href="" class="faq__questions-link">Каков в среднем бюджет на реализацию ваших проектов?</a>
+                        <button class="faq__questions-button">Каков в среднем бюджет на реализацию ваших проектов?</button>
+                        <div class="faq__questions-panel">
+                            <p class="faq__questions-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
                     </li>
                     <li class="faq__questions-item">
-                        <a href="" class="faq__questions-link">Берете ли вы проекты с маленькой площадью помещения?</a>
+                        <button class="faq__questions-button">Берете ли вы проекты с маленькой площадью помещения?</button>
+                        <div class="faq__questions-panel">
+                            <p class="faq__questions-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -234,5 +249,7 @@
             </div>
         </section>
     </main>
+    <script src="./burger-menu.js"></script>
+    <script src="./accordion.js"></script>
 </body>
 </html>
