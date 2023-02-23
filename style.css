@@ -483,31 +483,6 @@ p {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.faq__questions-item::after {
-    content: '+';
-    position: absolute;
-    right: .5rem;
-    top: 1rem;
-    font-weight: 500;
-    font-size: 2rem;
-    width: 2rem;
-    height: 2rem;
-}
-
-/* .faq__questions-link {
-    display: block;
-    padding: 1rem 2.7rem 1rem 2rem;
-    text-align: left;
-    font-weight: 500;
-    font-size: .9rem;
-    background: rgba(217, 217, 217, 0.1);
-    transition: all 0.2s linear;
-} */
-
-/* .faq__questions-link:hover {
-    background: rgba(217, 217, 217, 0.2);
-} */
-
 /*accordion*/
 
 .faq__questions-button {
@@ -515,14 +490,26 @@ p {
     width: 100%;
     border: none;
     outline: none;
-    display: block;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem 2.7rem 1rem 2rem;
     text-align: left;
     font-weight: 500;
     font-size: .9rem;
     background: rgba(217, 217, 217, 0.1);
     color: #F2F2F2;
+}
+
+.faq__questions-button-show {
+    width: 1rem;
+    height: 1rem;
     transition: all 0.2s linear;
+}
+
+.faq__questions-button-close {
+    transform: rotate(-45deg);
 }
 
 .active, .faq__questions-button:hover {
@@ -530,14 +517,9 @@ p {
 }
 
 .faq__questions-panel {
-    padding: 0 18px;
     display: none;
-    background-color: white;
     overflow: hidden;
-}
-
-.faq__questions-panel{
-    padding: 1rem 2.7rem 1rem 2rem;
+    padding: 1rem 2rem;
     text-align: left;
     font-weight: 300;
     font-size: .9rem;
@@ -598,6 +580,7 @@ p {
         left: 0;
         right: 0;
         padding: 1rem 0;
+        z-index: 100;
     }
 
     .header__nav-link {
@@ -611,8 +594,8 @@ p {
     .header__nav-button-close {
         display: block;
         position: absolute;
-        right: 1.2rem;
-        top: 1.4rem;
+        right: 2.1rem;
+        top: 1rem;
         width: 1.5rem;
         height: 1.5rem;
         border: none;
@@ -676,6 +659,10 @@ p {
         height: 1.2rem;
     }
 
+    .header__nav-button-close {
+        right: 1.2rem;
+    }
+
     .main-screen__container {
         padding: 3rem 1rem;
     }
@@ -710,12 +697,13 @@ p {
     }
 
     .about__text-content-wrapper {
+        width: 100%;
         flex-direction: column;
     }
 
     .about__text-content {
         width: 100%;
-        font-size: .8rem;
+        font-size: .7rem;
     }
 
     .works__section {
