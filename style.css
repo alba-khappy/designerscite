@@ -176,7 +176,7 @@ p {
 .about__text-content-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
 }
 
@@ -430,10 +430,6 @@ p {
     width: 100%;
     position: relative;
     background: rgba(217, 217, 217, 0.1);
-    padding: 1.5rem 1.3rem;
-    text-align: left;
-    font-weight: 500;
-    font-size: .9rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -445,12 +441,21 @@ p {
     content: '+';
     position: absolute;
     right: .5rem;
-    top: 1.3rem;
+    top: 1rem;
     font-weight: 500;
     font-size: 2rem;
     width: 2rem;
     height: 2rem;
 }
+
+.faq__questions-link {
+    display: block;
+    padding: 1rem 2.7rem 1rem 2rem;
+    text-align: left;
+    font-weight: 500;
+    font-size: .9rem;
+}
+
 
 /*contacts*/
 
@@ -487,6 +492,48 @@ p {
     font-size: .9rem;
 }
 
+@media (max-width: 1200px) {
+
+    .header__nav-list {
+        display: none;
+        flex-direction: column;
+    }
+
+    .header__burger-menu {
+        display: block;
+    }
+
+    .header__burger-menu {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .calculate-now__container {
+        flex-direction: column;
+    }
+
+    .calculate-now__content {
+        padding-right: 0;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .calculate-now__content::after {
+        background-image: none;
+    }
+
+    .prices__offers-list {
+        flex-direction: column;
+    }
+
+    .prices__offers-item {
+        width: 50%;
+        min-width: 22rem;
+    }
+
+}
+
 
 @media (max-width: 800px) {
 
@@ -499,17 +546,8 @@ p {
     }
 
     .header__socials-link {
-        width: 1rem;
-        height: 1rem;
-    }
-
-    .header__burger-menu {
-        display: block;
-    }
-
-    .header__nav-list {
-        display: none;
-        flex-direction: column;
+        width: 1.2rem;
+        height: 1.2rem;
     }
 
     .main-screen__container {
@@ -601,12 +639,9 @@ p {
         padding: 0;
     }
 
-    .prices__offers-list {
-        flex-direction: column;
-    }
-
     .prices__offers-item {
         width: 100%;
+        min-width: auto;
     }
 
     .prices__h2 {
@@ -636,21 +671,6 @@ p {
 
     .calculate-now__section {
         padding: 4rem 1rem;
-    }
-
-    .calculate-now__container {
-        flex-direction: column;
-    }
-
-    .calculate-now__content {
-        padding-right: 0;
-        font-size: 1.2rem;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    .calculate-now__content::after {
-        background-image: none;
     }
 
     .contacts__list {
